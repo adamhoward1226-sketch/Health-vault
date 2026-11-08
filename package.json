@@ -1,0 +1,22 @@
+{
+  "name": "vitalvault",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VitalVault - offline encrypted health & workout tracker",
+  "scripts": {
+    "android:init": "npx cap add android && node scripts/android-setup.mjs && npx cap sync android",
+    "android:sync": "node scripts/android-setup.mjs && npx cap sync android",
+    "android:open": "npx cap open android",
+    "android:build": "npm run android:sync && cd android && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/local-notifications": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}

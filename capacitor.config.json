@@ -1,0 +1,15 @@
+{
+  "appId": "com.vitalvault.app",
+  "appName": "VitalVault",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#F4F6FB"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_vv",
+      "iconColor": "#2B63F6"
+    }
+  }
+}
